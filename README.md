@@ -1,7 +1,7 @@
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 # Project Real Estate
-A Full Stack Real Estate Website using React, Express , Prisma and MongoDb
+This project is a comprehensive full-stack application designed to streamline the process of buying, selling, and renting properties. Whether you're a real estate agent, a property owner, or a potential buyer, this platform offers a seamless experience for managing real estate transactions.
 
 ## Project Details 
 In This Project you can book a home and also Have a Chatting Feature 
