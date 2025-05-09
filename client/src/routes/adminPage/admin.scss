@@ -1,0 +1,101 @@
+.admin-page {
+  padding: 2rem 3rem;
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .stats-section {
+    margin-bottom: 3rem;
+  }
+
+  .stats-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .stat-card {
+      flex: 1;
+      min-width: 200px;
+      padding: 2rem;
+      border-radius: 16px;
+      color: white;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      &.users {
+        background: linear-gradient(135deg, #1abc9c, #16a085);
+      }
+
+      &.posts {
+        background: linear-gradient(135deg, #f39c12, #d35400);
+      }
+    }
+  }
+
+  .posts-section {
+    margin-top: 2rem;
+    max-height: 500px; /* Set max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Ensure scroll bar doesn't hide content */
+  }
+
+  .users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Add some gap between list items */
+    max-height: 500px; /* Set max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    
+    /* Optional: Add some padding and border styles to make it visually better */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .users-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .users-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    span {
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+}
